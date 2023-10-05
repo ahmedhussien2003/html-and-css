@@ -1,0 +1,726 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box ;
+}
+body {
+  /* font-family: 'Cairo', sans-serif; */
+}
+
+.header {
+width: 100%;
+height: 50px;
+background-color: black;
+top: 0px;
+left: 0px;
+position: fixed;
+overflow: auto; 
+opacity: 0.5;
+z-index: 30;
+}
+.logo {
+  width: 45px;
+  height: 100%;
+  opacity: 1;
+  margin-left: 200px;
+}
+.menus {
+list-style: none;
+float: right;
+margin-right: 30px;
+margin-top: 15px;
+margin-right: 100px;
+}
+.menus li {
+  display: inline-block;
+  margin-left: 25px;
+  position: relative;
+}
+.menus li a {
+  text-decoration: none;
+  color:beige;
+  font-size: 20px;
+  font-weight: 800;
+  
+}
+.menus li::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4px;
+  bottom: -5px;
+  left: 0;
+  background-color: rgb(97, 149, 255);
+  transition: .3s;
+
+}
+.menus li:hover::before  {
+  width:100%;
+}
+
+/* ///////////////////////////////////////////////////////////////////header finish */
+
+/* .container {
+  width: 80%;
+  margin: auto;
+}
+
+.item {
+  float: left;
+  background-color: rgb(175, 174, 174);
+  width: 30%;
+  padding: 14px  19px;
+  text-align: center; 
+  position: relative;
+}
+
+.mar {
+  margin: 0 5%;
+}
+.item1-img {
+  position: relative;
+}
+img {
+  width: 100%;
+  height:200px ;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5) ; 
+  visibility: hidden;
+  opacity: 0 ; 
+  transition: 1s ;    
+  background-color: red;
+}
+.overlay a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: chartreuse;
+  color: white;
+  margin-left: auto;
+}
+
+.item:hover .overlay {
+opacity: 0.7;
+visibility: visible;
+}
+
+.overlay a i {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.item::after {
+  position:absolute;
+  content: "";
+  
+  width: 0;
+  height:00%;
+  
+  bottom: 0;
+  right:0;
+  background-color: blue;
+  
+  opacity: 0;
+  transition: 1s;
+}
+
+.item:hover::after {
+  width: 100%;
+  height:100%;
+  opacity: 1;
+  
+} */
+
+/* //////////////////////////////////////////////////////////////////////container example */
+
+.f-section {
+  width: 100%;
+  background-image: url(../images/ddd.jpg);
+  height: 100vh;
+  position:relative ;
+}
+
+.overley {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+  /* background-color: blue; */
+  width: 60%;
+  text-align: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+}
+
+.content h2 {
+  color: rgb(224, 225, 225);
+  font-size: 60px;
+}
+
+.content p {
+  color: white;
+  font-size: 20px;
+  margin:10px 0 ;
+  letter-spacing: 3px;
+}
+
+.btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  margin-right: 15px;
+  text-transform: capitalize;
+  font-size: 20px;
+}
+.bt2 {
+  background-color: blue;
+}
+
+.btn:hover {
+  opacity: 0.4;
+}
+
+/* //////////////////////////////////////////////////////////first-section finish */
+.sec-section {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.sec-section h2 {
+  padding-top: 130px;
+  font-size: 35px;
+}
+.sec-section .underline {
+  margin: auto;
+  width: 70px;
+  height: 5px;
+  background-color: blue;
+  margin-top: 5px;
+}
+.sec-section .container {
+  background-color: rgba(222, 184, 135,0.5);
+  width: 80%;
+  margin: auto;
+}
+
+.sec-section .container .card {
+  border: 0.5px solid ;
+  float:left ;
+  width: 30%;
+  margin-top: 80px;
+  position: relative;
+}
+.sec-section .container .mg {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.sec-section .container .card i {
+  color: rgb(97, 149, 255);
+  margin-top: 30px;
+  font-size: 25px;
+}
+.sec-section .container .card .h3 {
+  font-size: 25px;
+}
+.sec-section .container .card p {
+  letter-spacing: 2px;
+  color: rgb(136, 155, 155);
+  margin: 13px 0;
+}
+.sec-section .container .card a {
+  display: inline-block;
+  text-decoration: none;
+  color:  rgb(97, 149, 255);
+  margin-bottom: 30px;
+}
+.sec-section .container .card::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0,0.5);
+  transition: 0.5s;
+  visibility: hidden;
+  z-index: -1;
+}
+.sec-section .container .card:hover::after {
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+}
+.sec-section .container .card:hover .h3 {
+  transition: 0.5s;
+  color: aliceblue;
+}
+
+
+
+/* ////////////////////////////////////////////////////////////// second section finish*/
+
+
+/* ////////////////////////////////////////////////////////////////third-section finish  */
+.four-section {
+  width: 100%;
+  height: 95vh;
+  /* background-color: #ececec; */
+  /* text-align: center; */
+}
+.four-section .address {
+  padding-top: 130px;
+  font-size: 35px;
+  text-align: center;
+}
+.four-section .underline {
+  margin: auto;
+  width: 70px;
+  height: 5px;
+  background-color: blue;
+  margin-top: 5px;
+}
+.four-section .container {
+  background-color: rgba(222, 184, 135,0.5);
+  width: 80%;
+  margin: auto;
+}
+.four-section .container .card {
+  border: 0.5px solid ;
+  float:left ;
+  width: 30%;
+  margin-top: 50px;
+  position: relative;
+}
+.four-section .container .mg {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.four-section .container .card i {
+  display: inline-block;
+  color: rgb(97, 149, 255);
+  margin: 30px 30px;
+  font-size: 25px;
+}
+.four-section .container .card .h3 {
+  font-size: 22px;
+  margin-left: 70px;
+  margin-top: -55px;
+}
+.four-section .container .card p {
+  letter-spacing: 2px;
+  color: rgb(136, 155, 155);
+  margin: 13px 0;
+  margin-left:70px ;
+  margin-right: 20px;
+}
+.four-section .container .card::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0,0.9);
+  transition: 0.5s;
+  visibility: hidden;
+  z-index: -1;
+}
+.four-section .container .card:hover::after {
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+}
+.four-section .container .card:hover .h3 {
+  transition: 0.3s;
+  color: aliceblue;
+}
+/* ///////////////////////////////////////////////////////////////////fourth-section finish */
+.fifth-section {
+  width: 100%;
+  height:95vh;
+  background-color:#ececec;
+  position: relative;
+}
+.fifth-section .text-content {
+  width: 40%;
+  height:70%;
+  background-color:#ececec;
+  padding: 80px 0 0 100px;
+  position: absolute;
+  float: left;
+}
+.fifth-section .text-content h2 {
+  font-size: 40px;
+}
+.fifth-section .text-content .underline {
+  width: 80px;
+  height: 5px;
+  margin-top: 20px;
+  background-color:blue ;
+}
+.fifth-section .text-content p {
+  margin-top: 50px;
+  font-size: 20px;
+  color: rgb(136, 155, 155) ;
+}
+.fifth-section .text-content .points {
+  margin-top: 20px;
+}
+.fifth-section .text-content .points span {
+  display: block;
+  line-height: 30px;
+  font-size: 18px;
+  color: rgb(136, 155, 155) ;
+}
+.fifth-section .text-content .points i {
+  color: rgb(97, 149, 255);
+  border: 1px solid rgb(97, 149, 255);
+  border-radius: 50%;
+}
+
+.fifth-section .pic-content {
+  width: 30%;
+  height: 57%;
+  background-color:white;
+  margin-left: 150px;
+  position: absolute;
+  float: left;
+  top: 87px;
+  left: 700px;
+}
+.fifth-section .pic-content img {
+  width: 70%;
+  display: block;
+  height: 100%;
+  margin: auto;
+}
+.fifth-section .pic-content .round {
+  margin: auto;
+  /* background-color: aquamarine; */
+  position: absolute;
+  width: 100px;
+  text-align: center;
+  left:50%;
+  transform: translate(-50%,0);
+}
+.fifth-section .pic-content .round div {
+  width: 10px;
+  height: 10px;
+  background-color:rgb(136, 155, 155);
+  display: inline-block;
+  border-radius: 50%;
+}
+.fifth-section .pic-content .round .fi {
+  background-color: rgb(97, 149, 255)
+}
+.fifth-section .pic-content .round .sec {
+  margin: 0 5%;
+}
+.fifth-section .pic-content .round div:hover {
+  background-color: rgb(97, 149, 255) ;
+}
+/* ///////////////////////////////////////////////////////////////////fifth-section finish */
+.sixth-section {
+  background-image: url(../images/eee.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+} 
+.sixth-section .overley6 {
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.sixth-section .overley6 .container6 {
+  width: 70%;
+  margin: auto;
+  overflow: auto;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.sixth-section .overley6 .container6 .item6 {
+  float: left;
+  width: 25%;
+  text-align: center;
+  
+}
+.sixth-section .overley6 .container6 .item6 i {
+  color:rgb(97, 149, 255) ;
+  font-size: 50px;
+}
+.sixth-section .overley6 .container6 .item6 p {
+  color: white;
+  font-size: 20px;
+}
+.sixth-section .overley6 .container6 .item6 .number p {
+  font-size: 35px;
+}
+/* /////////////////////////////////////////////////////////////////////sixth-section finish */
+.seventh-section {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background-color:#ececec;
+}
+.seventh-section h2 {
+  padding-top: 100px;
+  font-size: 40px;
+}
+.seventh-section .underline {
+  width: 60px;
+  height: 5px;
+  margin: auto;
+  margin-top: 15px;
+  background-color:blue ;
+}
+.seventh-section .container {
+  width: 80%;
+  margin: auto;
+  padding-top: 60px;
+  overflow: auto;
+}
+.seventh-section .container .label {
+  border: 1px solid;
+  width: 30%;
+  float: left;
+  position: relative;
+}
+.seventh-section .container .margin {
+  margin: 0 5%;
+}
+.seventh-section .container .label span {
+  display: block;
+  padding-top: 50px;
+  color:  rgb(76,77,82);
+  font-size: 20px;
+}
+.seventh-section .container .label .price {
+  border: 1px solid #7ba7ff;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.seventh-section .container .label .price .value {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+.seventh-section .container .label .price p {
+  font-weight: 900;
+  font-size: 23px;
+}
+.seventh-section .container .label > p {
+  padding-top: 10px;
+  color:rgb(76,77,82);
+  font-size: 18px;
+}
+.seventh-section .container .label button {
+  background-color: rgba(255,255,255,0);
+  margin: 30px;
+  padding: 15px 20px;
+  border-radius: 6px;
+}
+.seventh-section .container .label::after {
+  position: absolute;
+  content: "";
+  width:100%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0,0.4);
+  transition: 0.5s;
+  visibility: hidden;
+  /* z-index: -1; */
+}
+.seventh-section .container .label:hover::after {
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+}
+.seventh-section .container .label:hover span {
+  color: red;
+}
+.seventh-section .container .label:hover button {
+  background-color: #7ba7ff;
+}
+/* /////////////////////////////////////////////////////////////////////seventh-section finish */
+.ninth-section {
+  text-align: center;
+  height: 100vh;
+}
+.ninth-section .title {
+  margin: auto;
+}
+.ninth-section .title h2 {
+  font-size: 40px;
+}
+.ninth-section .title .underline {
+  width: 80px;
+  height: 5px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 60px;
+  background-color:blue ;
+
+}
+.ninth-section .teamcontent {
+  width: 80%;
+  margin: auto;
+  overflow: auto;
+}
+.ninth-section .teamcontent .item {
+  width: 30%;
+  height: 400px;
+  float:left ;
+  text-align: center;
+  background-color: #d1caca;
+  position: relative;
+}
+.ninth-section .teamcontent .item .item1-img {
+  width: 80%;
+  height: 300px;
+  position: relative;
+  /* padding-top: 20px; */
+  top: 20px;
+  margin: auto;
+}
+.ninth-section .teamcontent .item .item1-img img {
+  width: 100%;
+  height: 100%;
+  
+}
+.ninth-section .teamcontent .mar {
+  margin: 0 5%;
+}
+.ninth-section .teamcontent .item .item1-img .overlay  {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0) ; 
+  visibility: hidden;
+  opacity: 0 ; 
+  transition: 1s ;    
+}
+.ninth-section .teamcontent .item .item1-img .overlay a {
+  width: 40px;
+  height: 40px;
+  background-color:#7ba7ff;
+  color: blanchedalmond;
+  display: block;
+  margin-left: auto;
+}
+.ninth-section .teamcontent .item .item1-img .overlay a i {
+  line-height: 40px;
+  color:white;
+}
+.ninth-section .teamcontent .item .item1-info {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top:80%
+}
+.ninth-section .teamcontent .item:hover .overlay {
+  opacity: 0.6;
+  visibility: visible;
+  }
+  .ninth-section .teamcontent .item:hover .item1-info h2 {
+    color: azure;
+  }
+  .ninth-section .teamcontent .item:hover .item1-info span {
+    color: rgb(97, 149, 255);
+  }
+.ninth-section .teamcontent .item::after {
+    position:absolute;
+    content: "";
+    
+    width:100% ;
+    height:00%;
+    
+    top: 0;
+    left:0;
+    background-color:rgba(0,0,0,0.3);
+    
+    opacity: 0;
+    transition: 0.5s;
+  }
+  
+.ninth-section .teamcontent .item:hover::after {
+    width: 100%;
+    height:100%;
+    opacity: 1;
+    
+  }
+/* ///////////////////////////////////////////////////////////////////ninth-section finish */
+
+
+
+/* ////////////////////////////////////////////////////////////////eleventh-section finish */
+.footer {
+  width: 100%;
+  height: 45vh;
+  background-color: rgb(76,77,82);
+}
+.std {
+  display: block;
+  height:40% ;
+  width: 170px;
+  padding-top: 40px;
+  margin: auto;
+}
+.footer .icons {
+  text-align: center;
+}
+.l-icon {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: rgb(107, 149, 255);
+  margin-top: 20px;
+  margin-right: 5px;
+}
+.l-icon i {
+  color: white;
+  line-height: 43px;
+}
+.last-paragraph {
+  color: rgb(153, 153, 153);
+  text-align: center;
+  font-size: 13px;
+  margin-top: 10px;
+}
+.l-icon:hover {
+  background-color:rgb(62, 71, 199) ;
+}
+
+/* //////////////////////////////////////////////////////////////////////footer finish */
